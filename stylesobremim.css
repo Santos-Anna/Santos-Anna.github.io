@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins",sans-serif;
+}
+:root{
+    --br-color:#ffffff;
+    --second-bg-color:#ffffff;
+    --text-color:rgb(0, 0, 0);
+    --main-color:#921A40;
+    --header-color:#C75B7A;
+    --textheader-color:white;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--header-color);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a {
+    font-size: 1.4rem;
+    color: var(--textheader-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+.home-img{
+    display: flex;
+    margin-top:200px;
+    border-radius: 50%;
+}
+.home-img img{
+    border-radius:50%;
+    cursor:pointer;
+    transition: 0.4s ease-in-out;
+    margin-top: 0.2rem;
+}
+.home-img img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+.home-content{
+    margin-top: 8rem;
+}
+.home-content h1{
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: center; /* Centraliza verticalmente */
+    font-size: 3.5rem;
+}
+
+.home-content p { 
+    font-size: 1.3rem;
+    gap: 2px;
+}
+
+.home-content span{
+    color: var(--main-color);
+}
+
+.linguagens-icon i{
+    color: #921A40;
+    display: inline-flex;
+    justify-content: center;
+    align-items:center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border:0.2rem solid var(--main-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+.endereco iframe{
+    display: flex;
+    justify-items: center;
+    margin-left: 650px;
+    margin-top: 90px;
+}
+.endereco h2{
+    margin-left: 48rem;
+    font-size: 2.5rem;
+}
